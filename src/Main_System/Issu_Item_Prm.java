@@ -45,7 +45,6 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
         Tot_P = new javax.swing.JLabel();
         Tot_Q = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        Update_P = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addKeyListener(new java.awt.event.KeyAdapter() {
@@ -225,16 +224,6 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         jLabel6.setText("Total QTY :-");
 
-        Update_P.setBackground(new java.awt.Color(255, 204, 153));
-        Update_P.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        Update_P.setForeground(new java.awt.Color(0, 0, 0));
-        Update_P.setText("Update");
-        Update_P.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Update_PActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -276,9 +265,7 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Delete_All, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(Delete_P, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(Update_P, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Delete_P)
                             .addComponent(Add_P, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(78, 78, 78)))
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -319,7 +306,7 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(Delete_P)
                                 .addGap(18, 18, 18)
-                                .addComponent(Update_P))
+                                .addComponent(Delete_All))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(Tot_P, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -328,9 +315,7 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Tot_Q, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(18, 18, 18)
-                        .addComponent(Delete_All)
-                        .addGap(128, 128, 128))))
+                        .addGap(169, 169, 169))))
         );
 
         pack();
@@ -367,10 +352,6 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
         addConsumer_Select();
     }//GEN-LAST:event_Con_select_BActionPerformed
 
-    private void Update_PActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Update_PActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Update_PActionPerformed
-
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
     }//GEN-LAST:event_formKeyPressed
 
@@ -391,7 +372,7 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
     private void Submit_DataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit_DataActionPerformed
                send_data_dataBase();
                setVisible(false);   
-               new Issu_Item_Prm().setVisible(true);   
+        //       new Issu_Item_Prm().setVisible(true);   
     }//GEN-LAST:event_Submit_DataActionPerformed
 
     private void Con_IdPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_Con_IdPropertyChange
@@ -623,7 +604,6 @@ public class Issu_Item_Prm extends javax.swing.JFrame {
     private static javax.swing.JLabel Time_T;
     public static javax.swing.JLabel Tot_P;
     public static javax.swing.JLabel Tot_Q;
-    private javax.swing.JButton Update_P;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

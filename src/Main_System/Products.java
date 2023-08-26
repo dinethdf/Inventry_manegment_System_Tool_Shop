@@ -61,7 +61,6 @@ public class Products extends javax.swing.JFrame {
         emlow = new javax.swing.JTextField();
         jPanel11 = new javax.swing.JPanel();
         p_bcode = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
         add1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -74,7 +73,7 @@ public class Products extends javax.swing.JFrame {
         p_name18 = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        p_name19 = new javax.swing.JTextField();
+        qtys18 = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         p_name20 = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
@@ -409,14 +408,6 @@ public class Products extends javax.swing.JFrame {
             }
         });
 
-        jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setText("Item code Check");
-        jCheckBox1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBox1MouseClicked(evt);
-            }
-        });
-
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -453,9 +444,7 @@ public class Products extends javax.swing.JFrame {
                             .addGroup(jPanel11Layout.createSequentialGroup()
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(3, 3, 3)
-                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
-                                    .addComponent(p_bcode)))
+                                .addComponent(p_bcode, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(add1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -471,9 +460,7 @@ public class Products extends javax.swing.JFrame {
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(p_bcode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox1)
-                .addGap(68, 68, 68)
+                .addGap(94, 94, 94)
                 .addComponent(add1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(add)
@@ -569,10 +556,10 @@ public class Products extends javax.swing.JFrame {
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("Avl. Quantity :");
 
-        p_name19.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        p_name19.addActionListener(new java.awt.event.ActionListener() {
+        qtys18.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        qtys18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p_name19ActionPerformed(evt);
+                qtys18ActionPerformed(evt);
             }
         });
 
@@ -622,7 +609,7 @@ public class Products extends javax.swing.JFrame {
         update.setBackground(new java.awt.Color(153, 0, 51));
         update.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         update.setForeground(new java.awt.Color(204, 255, 255));
-        update.setText("Delete");
+        update.setText("Clear");
         update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateActionPerformed(evt);
@@ -658,7 +645,7 @@ public class Products extends javax.swing.JFrame {
                         .addGroup(jPanel15Layout.createSequentialGroup()
                             .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(p_name19, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(qtys18, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(3, 3, 3))
                         .addGroup(jPanel15Layout.createSequentialGroup()
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -690,7 +677,7 @@ public class Products extends javax.swing.JFrame {
                     .addComponent(jLabel26))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(p_name19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(qtys18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel27))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1126,23 +1113,39 @@ public class Products extends javax.swing.JFrame {
         jTabbedPane1.setSelectedIndex(1);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void p_name19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p_name19ActionPerformed
+    private void qtys18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qtys18ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_p_name19ActionPerformed
+    }//GEN-LAST:event_qtys18ActionPerformed
 
     private void p_bcode1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p_bcode1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p_bcode1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-                JOptionPane.showMessageDialog(null, "Product Updated");
+      
+        String idnm = jTextField4.getText();
+        String qtys = jTextField7.getText();
+         
+        try {
+            Statement s = databaseCon.connection().createStatement();
+            s.executeUpdate("UPDATE tools SET Qty ='"+qtys+"' WHERE Item_Code='"+idnm+"'");
+           
+            
+               JOptionPane.showMessageDialog(null, "Product Qty Updated");
+
             DefaultTableModel dt = (DefaultTableModel) productsw.getModel();
-               dt.setRowCount(0);
+             dt.setRowCount(0);
        
             jLabel45.setText("");
             jLabel44.setText("");    
             jLabel46.setText("");    
             jTextField7.setText("");    
+               
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+       
+           
            
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -1176,17 +1179,21 @@ public class Products extends javax.swing.JFrame {
             Statement s = databaseCon.connection().createStatement();
        
             s.executeUpdate("INSERT INTO tools (Item_Code,Item_Name,Qty,Category,Limit_Stk_Count,Supplier,Add_table_qty,IsAddTbl) VALUES ('"+pname+"','"+pname+"','"+qtys+"','"+cat+"','"+lowem+"','"+supll+"','0','0')");
-            JOptionPane.showMessageDialog(null, "Data Seved");
+           
             
                JOptionPane.showMessageDialog(null, "Product Added");
+            p_name.setText("");
+            qty.setText("");    
+              catg.setText("");    
+                emlow.setText("");    
+                  supli.setText("");    
+                    p_bcode.setText("");    
+                    
+               
         } catch (SQLException e) {
             System.out.println(e);
         }
     }//GEN-LAST:event_add1ActionPerformed
-
-    private void jCheckBox1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBox1MouseClicked
-         
-    }//GEN-LAST:event_jCheckBox1MouseClicked
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
              String ITMcode = jTextField1.getText();
@@ -1263,7 +1270,7 @@ public class Products extends javax.swing.JFrame {
                         while (Result_Product_Set.next()) {                
                              p_bcode1.setText(Result_Product_Set.getString(2));    
                              p_name18.setText(Result_Product_Set.getString(3));
-                             p_name19.setText(Result_Product_Set.getString(4));
+                             qtys18.setText(Result_Product_Set.getString(4));
                              p_name20.setText(Result_Product_Set.getString(5));
                              p_name22.setText(Result_Product_Set.getString(6));
                              p_name21.setText(Result_Product_Set.getString(7));
@@ -1273,7 +1280,7 @@ public class Products extends javax.swing.JFrame {
     }//GEN-LAST:event_productswMouseClicked
 
     private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
-           JOptionPane.showMessageDialog(null, "Product Updated");
+         //  JOptionPane.showMessageDialog(null, "Product Updated");
             DefaultTableModel dt = (DefaultTableModel) productsw.getModel();
                dt.setRowCount(0);
        
@@ -1282,7 +1289,7 @@ public class Products extends javax.swing.JFrame {
             jTextField2.setText("");    
             p_bcode1.setText("");    
             p_name18.setText("");    
-            p_name19.setText("");    
+            qtys18.setText("");    
             p_name20.setText("");    
             p_name21.setText("");    
             p_name22.setText("");    
@@ -1332,6 +1339,40 @@ public class Products extends javax.swing.JFrame {
 
     private void update1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_update1ActionPerformed
         // TODO add your handling code here:
+
+
+        String pname = p_name18.getText();
+        String idnm = p_bcode1.getText();
+        String qtys = qtys18.getText();
+        String cat = p_name20.getText();
+        String lowem = p_name22.getText();
+      
+        String supll = p_name21.getText();      
+        try {
+            
+            Statement s = databaseCon.connection().createStatement();
+       
+            s.executeUpdate("UPDATE tools SET Item_Name = '"+pname+"',Qty = '"+qtys+"', Category = '"+cat+"', Limit_Stk_Count = '"+lowem+"',Supplier = '"+supll+"'  WHERE Item_Code= '"+idnm+"' ");
+           
+            
+               JOptionPane.showMessageDialog(null, "Product Updated");
+
+            DefaultTableModel dt = (DefaultTableModel) productsw.getModel();
+             dt.setRowCount(0);
+       
+            jTextField1.setText("");
+            jTextField3.setText("");    
+            jTextField2.setText("");    
+            p_bcode1.setText("");    
+            p_name18.setText("");    
+            qtys18.setText("");    
+            p_name20.setText("");    
+            p_name21.setText("");    
+            p_name22.setText("");    
+               
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
     }//GEN-LAST:event_update1ActionPerformed
 
     /**
@@ -1380,7 +1421,6 @@ public class Products extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1441,13 +1481,13 @@ public class Products extends javax.swing.JFrame {
     private javax.swing.JTextField p_bcode1;
     private javax.swing.JTextField p_name;
     private javax.swing.JTextField p_name18;
-    private javax.swing.JTextField p_name19;
     private javax.swing.JTextField p_name20;
     private javax.swing.JTextField p_name21;
     private javax.swing.JTextField p_name22;
     private javax.swing.JTable productsw;
     private javax.swing.JTable productsw1;
     private javax.swing.JTextField qty;
+    private javax.swing.JTextField qtys18;
     private javax.swing.JPanel restock;
     private javax.swing.JTextField supli;
     private javax.swing.JButton update;

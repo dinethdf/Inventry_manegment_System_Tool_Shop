@@ -147,7 +147,7 @@ public class welcome extends javax.swing.JFrame {
         {
             for(int i = 0; i < 100; i++)
             { 
-               Thread.sleep(60);
+               Thread.sleep(20);
                load.prosess.setValue(i);
                }
             

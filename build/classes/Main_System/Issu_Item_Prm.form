@@ -74,10 +74,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="Delete_All" min="-2" pref="152" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="Delete_P" max="32767" attributes="0"/>
-                              <Component id="Update_P" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="Delete_P" min="-2" max="-2" attributes="0"/>
                           <Component id="Add_P" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
@@ -128,7 +125,7 @@
                           <Group type="102" attributes="0">
                               <Component id="Delete_P" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="Update_P" min="-2" max="-2" attributes="0"/>
+                              <Component id="Delete_All" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -142,9 +139,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="Delete_All" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -488,23 +483,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Total QTY :-"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="Update_P">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="cc" red="ff" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="18" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="0" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Update"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Update_PActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>
